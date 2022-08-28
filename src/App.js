@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import ControlledCarousel from "./components/CarouselContainer";
+import SendEmail from "./components/Email";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   return <div>
+      <ControlledCarousel />
+      <div className="contact">
+         <h1>Contact me</h1>
+         Web: <a href="https://josuemedinaguerrero.netlify.app/">https://josuemedinaguerrero.netlify.app/</a>
+      </div>
+      <SendEmail />
+   </div>
 }
 
 export default App;
+
